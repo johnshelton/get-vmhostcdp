@@ -117,7 +117,7 @@ Get-VMHost | Where-Object {$_.ConnectionState -eq "Connected"} |
     $CDPInfo += $TempCDPInfo
     }
   }
-$CDPInfo | Export-Csv $OutputFile
+$CDPInfo | Export-Csv $OutputFile -NoTypeInformation
 } 
 
 
